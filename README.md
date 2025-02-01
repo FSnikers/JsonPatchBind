@@ -1,7 +1,8 @@
-==========================================================================
+=
                          JsonPatchBind
+=
+
 A lightweight library for handling partial updates in ASP.NET Core APIs without JSON Patch.
-=========================================================================
 
 
 Description
@@ -45,9 +46,10 @@ Although JSON Patch (RFC 6902) is a standard, it comes with several drawbacks:
 
   ❌ It demands extra validation.
 
-======================================================================
-                 Comparison Table: When to Use
-======================================================================
+=
+Сomparison Table: When to Use
+=
+      
 
 | **Criteria**               | **JsonPatchBind**                                        | **JSON Patch**                                 |
 |----------------------------|----------------------------------------------------------|------------------------------------------------|
@@ -57,9 +59,9 @@ Although JSON Patch (RFC 6902) is a standard, it comes with several drawbacks:
 | **Swagger Integration**    | Automatically generates accurate schema                | Often requires manual adjustments              |
 | **Validation**             | Minimal additional validation needed                   | Requires extra validation steps                |
 
-======================================================================
+=
            Pros and Cons: JSON Patch vs. JsonPatchBind
-======================================================================
+=
 
 | **Aspect**              | **JsonPatchBind**                                         | **JSON Patch**                                |
 |-------------------------|-----------------------------------------------------------|-----------------------------------------------|
@@ -69,9 +71,9 @@ Although JSON Patch (RFC 6902) is a standard, it comes with several drawbacks:
 | **Validation**          | ✅ Minimal extra validation                                | ❌ Additional data validation is often necessary |
 | **Standardization**     | ❌ Custom solution (not an official standard)               | ✅ Official standard (RFC 6902)                |
 
-======================================================================
+=
                     When to Use JsonPatchBind?
-======================================================================
+=
 Use **JsonPatchBind** if:
 
   • You need to implement partial updates without overcomplicating your logic.
@@ -82,9 +84,9 @@ Use **JsonPatchBind** if:
   
   • You do not need the full set of JSON Patch operations.
 
-======================================================================
+=
 Installation & Integration
-======================================================================
+=
 1. **Installation:**
    Add the package to your project via NuGet:
    
