@@ -1,6 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonPatchBind", "JsonPatchBind\JsonPatchBind.csproj", "{92B4017C-0E29-4C51-8C6D-72CCA31794E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonPatchBind", "src\JsonPatchBind\JsonPatchBind.csproj", "{92B4017C-0E29-4C51-8C6D-72CCA31794E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{869B2DB6-3D32-4390-9DFA-FA0E3F8C29DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{FE75BE39-3580-4056-8A02-7224E00A915B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerApi", "samples\ControllerApi\ControllerApi.csproj", "{615A5CDA-C994-4BBB-9A99-756753999B00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +18,13 @@ Global
 		{92B4017C-0E29-4C51-8C6D-72CCA31794E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92B4017C-0E29-4C51-8C6D-72CCA31794E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92B4017C-0E29-4C51-8C6D-72CCA31794E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{615A5CDA-C994-4BBB-9A99-756753999B00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615A5CDA-C994-4BBB-9A99-756753999B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615A5CDA-C994-4BBB-9A99-756753999B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615A5CDA-C994-4BBB-9A99-756753999B00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92B4017C-0E29-4C51-8C6D-72CCA31794E7} = {869B2DB6-3D32-4390-9DFA-FA0E3F8C29DB}
+		{615A5CDA-C994-4BBB-9A99-756753999B00} = {FE75BE39-3580-4056-8A02-7224E00A915B}
 	EndGlobalSection
 EndGlobal
