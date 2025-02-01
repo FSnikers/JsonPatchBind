@@ -92,7 +92,17 @@ Installation & Integration
    
        dotnet add package JsonPatchBind
 
-2. **Usage in a Controller:**
+   Program:
+   ```csharp
+   builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new OptionalConverterFactory());
+    });
+
+
+
+3. **Usage in a Controller:**
    Example model:
    
    ```csharp
@@ -102,3 +112,13 @@ Installation & Integration
        public Optional<string> LastName { get; set; }
        public Optional<string> Email { get; set; }
    }
+
+
+
+4. **Usage with Swagger:**
+   
+   ```csharp
+   builder.Services.AddSwaggerGen(c =>
+   {
+    c.SchemaFilter<OptionalSchemaFilter>();
+   });
