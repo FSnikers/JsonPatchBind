@@ -8,10 +8,19 @@
         <Authors>FSnikers VZhuk</Authors>
         <Title>JsonPatchBind</Title>
         <Description>A lightweight library for handling partial updates in ASP.NET Core APIs without JSON Patch.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/SnikersFar/JsonPatchBind</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
-
+    
     <ItemGroup>
       <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Include="..\..\README.md" Pack="true" PackagePath="\">
+        <Link>README.md</Link>
+      </None>
     </ItemGroup>
 
 </Project>
